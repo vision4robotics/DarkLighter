@@ -28,9 +28,13 @@ Email: changhongfu@tongji.edu.cn
 ### Requirements
 
 1.Python 3.7
+
 2.Pytorch 1.0.0
+
 3.opencv-python
+
 4.torchvision
+
 5.cuda 10.2
 
 >Download the package, extract it and follow two steps:
