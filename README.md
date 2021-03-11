@@ -8,13 +8,8 @@ Code and demo videos of DarkLighter---a low-light enhancer towards facilitating 
 
 # Demo video
 
-<iframe 
-    width="800" 
-    height="450" 
-    src="https://youtu.be/rJtPST69J60"
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
+[![DarkLighter](https://res.cloudinary.com/marcomontalbano/image/upload/v1615476036/video_to_markdown/images/youtube--rJtPST69J60-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/rJtPST69J60 "DarkLighter")
+
 
 # Publication and citation
 
