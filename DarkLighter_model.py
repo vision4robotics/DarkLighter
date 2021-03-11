@@ -7,7 +7,7 @@ from torchvision import transforms
 class enhancer(nn.Module):
 
 	def __init__(self):
-		super(enhance_net_nopool, self).__init__()
+		super(enhancer, self).__init__()
 
 		self.relu = nn.ReLU(inplace=True) 
 
@@ -17,8 +17,8 @@ class enhancer(nn.Module):
 		self.e_conv3 = nn.Conv2d(number_f*2,number_f,3,1,1,bias=True) 
 		self.e_conv4 = nn.Conv2d(number_f*2,number_f,3,1,1,bias=True) 
 		self.e_conv5 = nn.Conv2d(number_f*2,number_f,3,1,1,bias=True) 
-		self.e_conv6 = nn.Conv2d(number_f*2,8,3,1,1,bias=True) 
 		self.e_conv7 = nn.Conv2d(number_f*2,8,3,1,1,bias=True) 
+		self.e_conv8 = nn.Conv2d(number_f*2,8,3,1,1,bias=True) 
 		self.maxpool = nn.MaxPool2d(2, stride=2, return_indices=False, ceil_mode=False)
 		self.upsample = nn.UpsamplingBilinear2d(scale_factor=2)
 
@@ -31,8 +31,8 @@ class enhancer(nn.Module):
 		x3 = self.relu(self.e_conv3(torch.cat([x1,x2],1)))
 		x4 = self.relu(self.e_conv4(torch.cat([x2,x3],1)))
 		x5 = self.relu(self.e_conv5(torch.cat([x3,x4],1)))
-		x_r = torch.tanh(self.e_conv6(torch.cat([x4,x5],1)))
-		x_n = torch.tanh(self.e_conv7(torch.cat([x4,x5],1)))
+		x_r = torch.tanh(self.e_conv7(torch.cat([x4,x5],1)))
+		x_n = torch.tanh(self.e_conv8(torch.cat([x4,x5],1)))
 		r1,r2,r3,r4,r5,r6,r7,r8 = torch.split(x_r, 1, dim=1)
 		n1,n2,n3,n4,n5,n6,n7,n8 = torch.split(x_n, 1, dim=1)
 

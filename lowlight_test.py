@@ -44,7 +44,7 @@ def lowlight(image_path, DarkLighter):
 if __name__ == '__main__':
 # test_images
 	with torch.no_grad():
-		filePath = './test/'
+		filePath = './data/test/'
 	
 		file_list = os.listdir(filePath)
 		DarkLighter = model.enhancer().cuda()
