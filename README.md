@@ -13,11 +13,27 @@ Code and demo videos of DarkLighter---a low-light enhancer towards facilitating 
 
 # Publication and citation
 
-DarkLighter is proposed in our paper for IROS 2021. Detailed explanation of our method can be found in the paper:
+DarkLighter is proposed in our paper accepted by IROS 2021. Detailed explanation of our method can be found in the paper:
 
 Junjie Ye, Changhong Fu, Guangze Zheng, Ziang Cao, and Bowen Li
 
-DarkLighter: Light up the Darkness for UAV Tracking
+**DarkLighter: Light up the Darkness for UAV Tracking**
+
+In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021
+
+Please cite the above publication if you find this work helpful. Bibtex entry:
+
+> @Inproceedings{Ye2021IROS,
+>
+> title={{DarkLighter: Light up the Darkness for UAV Tracking}},
+>
+> author={Ye, Junjie and Fu, Changhong and Zheng, Guangze and Cao, Ziang and Li, Bowen},  
+>
+> booktitle={Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+>
+> year={2021}, 
+>
+> pages={1-7}}
 
 # Contact 
 Junjie Ye
@@ -62,5 +78,5 @@ Email: changhongfu@tongji.edu.cn
 
 # Acknowledgements
 
-We thank the contribution of `Chongyi Li`, `Chen Wei` for their previous work Zero-DCE and Retinex-Net.
+We sincerely thank the contribution of `Chongyi Li`, `Chen Wei` for their previous work Zero-DCE (https://github.com/Li-Chongyi/Zero-DCE) and RetinexNet (https://github.com/weichen582/RetinexNet).
 
